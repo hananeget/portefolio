@@ -1,0 +1,99 @@
+body{background-image:url(digital5.png);
+    opacity: 0,2;
+    margin: 0%;
+    
+}
+/*css grid en countainer*/
+.container{
+    display: grid;
+    grid-template-rows: 20% ,65%,15%;
+    align-content: center;
+   
+    
+}
+
+/*css grid en header*/
+header{
+  display: grid;
+  grid-template-columns: repeat(6,10%);
+  justify-content: center;
+  padding: 3%;
+ 
+  
+
+gap: 5%; }
+  
+   
+  
+   /*logo img */
+     #logo{height:120% ;
+        width: 80%;
+        grid-column: 1/2;
+        justify-items: end;
+      float: right;}
+      
+  
+/*color et decoration text sur input*/
+     input{
+   background-color:transparent;
+    border: none;
+    font-size: 130%;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    justify-items: star;
+    outline: none;
+    color: #aae6f3;}
+   
+  aside{grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3/1fe);
+    grid-template-rows: 100%;
+    justify-content: end;
+    margin-top: 10%;
+   
+
+   
+   
+ }
+ #site{grid-column: 3/4;
+   height: 100%;
+   width: 30%;
+
+ justify-items:center;
+ 
+ margin-left: 60%;
+   
+  
+ }
+ #form{grid-column: 4/5;
+  
+   height: 100%;
+   width: 50%;
+justify-items: center;
+margin-left: 40%;
+ 
+ }
+   
+/*position de l'image avatar */
+       #avatar{
+         justify-items: end; 
+        }
+/*css grid à footer*/
+
+footer{ grid-row: 3/4;
+     display: grid;  
+    grid-template-columns: repeat(6,10%); 
+    justify-content: center;
+   align-items: flex-end;
+   background-color: #0AE7FF;
+    opacity: 0.5;
+    margin-top: 20%;
+    }
+    a{
+      justify-items: center;
+      padding: 10%;
+    }
+  
+
+
+
