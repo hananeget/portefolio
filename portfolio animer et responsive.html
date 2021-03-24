@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="portfo-an-res.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <!-- nav -->
+    <nav>
+        
+        <ul class="nav-links">
+            <li class="active"><a href="#">menu</a></li>
+            <li><a href="#propose" class="menu-btn">à propos de</a></li>
+            <li><a href="#compétence" class="menu-btn">les compétence</a></li>
+            <li><a href="#projet" class="menu-btn">les projets</a></li>
+            <li><a href="#contact" class="menu-btn">contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+    <!-- section home -->
+    <section class="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="tex-1">Bienvenue chez moi:<br><span class="nom"></span></div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section à propose de -->
+    <section id="propose">
+        <figure class="snip1482">
+            <figcaption >
+                <h2>a propos de </h2>
+                <p>je m'appelle hanane Mesbah,je suis dévloppeur web ,
+                    j'ai 35ans,et
+                    j'habite à Tanger, Maroc.
+                    je suis marié ,et maintenant j'ai étudier en solicode centre digitale solidaire .
+                </p>
+            </figcaption>
+            <a href="#"></a><img src="avatar-hanane.jpg" alt="sample45" />
+        </figure>
+    </section>
+
+    <!-- section les compétences -->
+
+<aside id="compétence">
+    <div class="skill-bars">
+        <div class="bar">
+            <div class="info">
+                <span>HTML</span>
+            </div>
+            <div class="progress-line html">
+                <span></span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <span>CSS</span>
+            </div>
+            <div class="progress-line css">
+                <span></span>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+                <span>JAVASCRIPT</span>
+            </div>
+            <div class="progress-line javascript">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="bar">
+            <div class="info">
+                <span>BOOTSTRAP</span>
+            </div>
+            <div class="progress-line bootstrap">
+                <span></span>
+            </div>
+        </div>
+        </divF>
+    </aside>
+        <!-- section de projet -->
+
+        <section class="projet" id="projet">
+
+
+
+            <figure class="snip1585">
+                <img width="80%" " src="fourmulaire.png" alt="sample70" />
+                <figcaption>
+                    <h3>maquette et coder <span>formulaire en HTML</span></h3>
+                </figcaption>
+                <a href="#"></a>
+            </figure>
+            <figure class="snip1585 ">
+                <img width="150%"  src="maquettage de site.png" alt="sample106" />
+                <figcaption>
+                    <h3>maquetter et coder<span>site web en HTML et CSS</span></h3>
+                </figcaption>
+                <a href="#"></a>
+            </figure>
+         </section>
+              
+         <!-- ....contact -->
+         <section id="contact">
+            <div class="wrapper fl">
+                <div class="main">
+                    <h1 class="head">
+                        Créer un compte</h1>
+        <div class="sign-up fl">
+                     <a href="#" class="btn ico bg1 hov1"><i class="fa fa-facebook fab"></i> Connectez-vous avec Facebook
+                     </a>
+                     <a href="#" class="btn ico bg2 hov2"><i class="fa fa-twitter fab"></i>Connectez-vous avec Twitter</a>
+                     <a href="#" class="btn ico bg3 hov3"><i class="fa fa-google-plus-g fab"></i> connectez-vous avec Google<b>+</b></a>
+                    </div>
+        <div class="sign-up-l fr">
+                        <form method="post">
+                            <p class="inpt">
+        <input type="text" name="fname" placeholder="entrer votre nome" required><i class="fa fa-user fas"></i></p>
+        <p class="inpt">
+        <input type="email" name="uid" placeholder="email" required><i class="fa fa-envelope fas"></i></p>
+        <p class="inpt">
+        <input type="password" name="pass" placeholder="mots de passe"><i class="fa fa-lock fas"></i></p>
+        <p>
+        <input type="submit"  name="sub" value="Sign up" class="sub"></p>
+        </form>
+        </div>
+        </div>
+        </div>
+         </section> 
+
+
+
+        <!-- footer -->
+        <footer>
+          <center>
+            <ul id="a">
+                <li> <a href="https://www.facebook.com/">facebook</a> </li>
+                <li><a href="https://twitter.com/twitter?lang=ar">twitter</a></li>
+                <li><a href="https://www.instagram.com/">instagrame</a></li>
+                <li><a href="https://www.youtube.com/">youtube</a></li>
+            </ul>
+           
+          </center>
+        </footer>
+        <script>
+            const burger = document.querySelector(".burger");
+            const navlinks = document.querySelector(".nav-links");
+            const links = document.querySelector(".nav-links li");
+
+            burger.addEventListener("click", () => {
+                navlinks.classList.toggle("open");
+            })
+
+            // typrd.js de section.....
+
+            var typed = new Typed(".nom", {
+                strings: [
+                    "je suis",
+                    "HANANE Mesbah",
+                    "Dévloppeure ",
+                    "Web ",
+                ],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true,
+            });
+        </script>
+
+
+
+
+        <script>/* Demo purposes only */
+            $(".hover").mouseleave(
+                function () {
+                    $(this).removeClass("hover");
+                }
+            );</script>
+
+
+
+
+</body>
+
+</html>
